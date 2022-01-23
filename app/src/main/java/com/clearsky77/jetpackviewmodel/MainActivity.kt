@@ -25,6 +25,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Log.d(TAG, "MainActivity - currentValue: $it")
             txtNum.text = it.toString()
         })
+        myNumberViewModel.currentValue.observe(this, Observer {
+            Log.d(TAG, "두번째로 등록한 옵져버 $it")
+            txtNum.text = it.toString()
+        })
+        myNumberViewModel.currentValue.observe(this, Observer {
+            Log.d(TAG, "세번째로 등록한 옵져버 $it")
+            txtNum.text = it.toString()
+        })
 
         btnPlus.setOnClickListener (this)
         btnMinus.setOnClickListener (this)
