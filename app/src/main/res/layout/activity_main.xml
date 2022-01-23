@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edtNum"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -38,8 +38,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btnMinus"
         android:layout_marginHorizontal="10dp"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/editText4"
-        app:layout_constraintTop_toTopOf="@+id/editText4" />
+        app:layout_constraintStart_toEndOf="@+id/edtNum"
+        app:layout_constraintTop_toTopOf="@+id/edtNum" />
 
     <Button
         android:id="@+id/btnMinus"
@@ -50,6 +50,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnPlus"
-        app:layout_constraintTop_toTopOf="@+id/editText4" />
+        app:layout_constraintTop_toTopOf="@+id/edtNum" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
