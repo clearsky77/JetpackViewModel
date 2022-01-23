@@ -1,0 +1,23 @@
+package com.clearsky77.jetpackviewmodel
+
+import android.util.Log
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+
+class MyNumberViewModel : ViewModel() {
+
+    companion object {
+        private val TAG: String = "태그"
+    }
+    private val _currentValue = MutableLiveData<Int>()
+
+    val currentValue: MutableLiveData<Int>
+        get() = _currentValue
+
+    // 초기값 설정
+   init {
+        Log.d(TAG,"MyNumberViewModel - 생성자 호출")
+        _currentValue.value = 0; // Mutable이라서 변경이 가능하다.
+    }
+
+}
