@@ -32,4 +32,8 @@ class MyNumberViewModel : ViewModel() {
                 _currentValue.value = _currentValue.value?.minus(input)
         }
     }
+
+    fun resetValue(){
+        _currentValue.value = 0
+    }
 }

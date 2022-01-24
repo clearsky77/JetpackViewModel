@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when(view){
             btnPlus -> myNumberViewModel.updateValue(ActionType.PLUS, userInput)
             btnMinus -> myNumberViewModel.updateValue(ActionType.MINUS, userInput)
-            btnReset -> myNumberViewModel.updateValue(ActionType.RESET)
+            btnReset -> myNumberViewModel.resetValue()
         }
     }
 }
