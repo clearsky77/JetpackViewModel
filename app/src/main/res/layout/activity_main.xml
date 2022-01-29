@@ -34,9 +34,9 @@
         android:id="@+id/btnPlus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
         android:text="더하기"
         app:layout_constraintEnd_toStartOf="@+id/btnMinus"
-        android:layout_marginHorizontal="10dp"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/edtNum"
         app:layout_constraintTop_toTopOf="@+id/edtNum" />
@@ -45,8 +45,8 @@
         android:id="@+id/btnMinus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="빼기"
         android:layout_marginHorizontal="10dp"
+        android:text="빼기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnPlus"
@@ -54,12 +54,24 @@
 
     <Button
         android:id="@+id/btnTest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_width="163dp"
+        android:layout_height="53dp"
         android:text="test"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtCopy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCopy" />
+
+    <TextView
+        android:id="@+id/txtCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="txtCopy"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnTest"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNum" />
 

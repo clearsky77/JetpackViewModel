@@ -34,19 +34,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             txtNum.text = it.toString()
         })
 
-        btnPlus.setOnClickListener (this)
-        btnMinus.setOnClickListener (this)
-        btnReset.setOnClickListener (this)
+        btnPlus.setOnClickListener(this)
+        btnMinus.setOnClickListener(this)
+        btnReset.setOnClickListener(this)
+        btnTest.setOnClickListener(this)
 
     }
 
     override fun onClick(view: View?) {
-        val userInput : Int = edtNum.text.toString().toInt()
+        val userInput: Int = edtNum.text.toString().toInt()
 
-        when(view){
+        when (view) {
             btnPlus -> myNumberViewModel.updateValue(ActionType.PLUS, userInput)
             btnMinus -> myNumberViewModel.updateValue(ActionType.MINUS, userInput)
             btnReset -> myNumberViewModel.resetValue()
+            btnTest -> txtCopy.text = txtNum.text.toString()
         }
     }
 }
