@@ -62,4 +62,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNum" />
 
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="초기화"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum"
+        tools:layout_editor_absoluteX="9dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

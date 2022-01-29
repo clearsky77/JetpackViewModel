@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btnPlus.setOnClickListener (this)
         btnMinus.setOnClickListener (this)
+        btnReset.setOnClickListener (this)
 
     }
 
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when(view){
             btnPlus -> myNumberViewModel.updateValue(ActionType.PLUS, userInput)
             btnMinus -> myNumberViewModel.updateValue(ActionType.MINUS, userInput)
+            btnReset -> myNumberViewModel.resetValue()
         }
     }
 }
